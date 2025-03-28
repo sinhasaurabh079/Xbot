@@ -69,6 +69,17 @@ with st.sidebar:
                 else:
                     st.success("Documents processed successfully!")
 
+    # ---------------------- Add Developer Credit in Sidebar ----------------------
+    st.markdown("---")
+    st.markdown(
+        """
+        <div style="text-align: center;">
+            <b>🚀 Developed by Gaurav Sinha</b>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 prompt = st.chat_input("Pass your prompt here")
 
 if prompt:
@@ -106,3 +117,25 @@ if prompt:
         st.session_state.messages.append({"role": "assistant", "content": response})
     except Exception as e:
         st.error(f"Error: {str(e)}")
+
+# ---------------------- Add Developer Credit in Footer ----------------------
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    </style>
+    <div class="footer">
+        🚀 Developed by <b>Gaurav Sinha</b>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
