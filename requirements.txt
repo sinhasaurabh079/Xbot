@@ -359,3 +359,11 @@ zipp==3.10.0
 zope.event==4.6
 zope.interface==5.5.2
 zxing-cpp==2.2.0
+streamlit
+langchain
+langchain_groq
+langchain_community
+transformers
+sentence-transformers
+torch
+pypdf
