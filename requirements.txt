@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain_groq
+langchain_community
+transformers
+sentence-transformers
+torch
+pypdf
+accelerate
+
+
+
+
+
+
