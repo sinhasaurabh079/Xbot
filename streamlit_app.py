@@ -11,7 +11,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter 
 
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.indexes import VectorstoreIndexCreator
+from langchain_community.indexes import VectorstoreIndexCreator
 from langchain.chains import RetrievalQA
 
 # Streamlit setup
