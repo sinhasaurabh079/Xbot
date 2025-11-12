@@ -7,7 +7,9 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+from langchain_text_splitters import RecursiveCharacterTextSplitter 
+
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.indexes import VectorstoreIndexCreator
 from langchain.chains import RetrievalQA
@@ -147,7 +149,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-        🚀 Developed by <b>Gaurav Sinha</b>
+        🚀 Developed by <b>Saurabh Sinha</b>
     </div>
     """,
     unsafe_allow_html=True,
